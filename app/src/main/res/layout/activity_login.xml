@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/imageViewLogo"
+            android:src="@drawable/ic_launcher"
+            android:layout_margin="20dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/imageViewFindPeople"
+            android:layout_margin="20dp"
+            android:background="#a1a1a1"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/imageViewCreateHotspot"
+            android:layout_margin="20dp"
+            android:background="#a1a1a1"
+            android:src="@drawable/ic_launcher"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
