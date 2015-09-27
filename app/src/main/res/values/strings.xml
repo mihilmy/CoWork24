@@ -20,17 +20,22 @@
 
     <!-- Nav Drawer Menu Items -->
     <string-array name="nav_drawer_items">
-        <item >Home</item>
-        <item >Find People</item>
-        <item >Photos</item>
-        <item >Communities</item>
-        <item >Pages</item>
-        <item >What\'s Hot</item>
+        <item >Activity</item>
+        <item >Reading</item>
+        <item >Working</item>
+        <item >Hacking</item>
+        <item >Place</item>
+        <item >Cafe</item>
+        <item >Library</item>
+        <item >Outdoor</item>
     </string-array>
 
     <!-- Nav Drawer List Item Icons -->
     <!-- Keep them in order as the titles are in -->
     <array name="nav_drawer_icons">
+        <item>@drawable/app_icon_actionbar</item>
+        <item>@drawable/app_icon_actionbar</item>
+        <item>@drawable/app_icon_actionbar</item>
         <item>@drawable/app_icon_actionbar</item>
         <item>@drawable/app_icon_actionbar</item>
         <item>@drawable/app_icon_actionbar</item>

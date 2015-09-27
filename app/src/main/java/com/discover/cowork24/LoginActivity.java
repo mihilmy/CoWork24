@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mActionBar = getSupportActionBar();
         mActionBar.setDisplayShowHomeEnabled(true);
         mActionBar.setDisplayUseLogoEnabled(true);
-        mActionBar.setLogo(R.drawable.app_icon_actionbar);
+        mActionBar.setLogo(R.drawable.app_icon_actionbar_new);
     }
 
     @Override
