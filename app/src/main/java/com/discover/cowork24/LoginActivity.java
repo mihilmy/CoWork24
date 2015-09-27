@@ -15,7 +15,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     Toolbar mToolbar;
     ActionBar mActionBar;
-
+    Intent intent;
     ImageView mImageViewFindPeople, mImageViewCreateHotspot;
 
     @Override
@@ -43,19 +43,20 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mActionBar = getSupportActionBar();
         mActionBar.setDisplayShowHomeEnabled(true);
         mActionBar.setDisplayUseLogoEnabled(true);
-        mActionBar.setLogo(R.drawable.app_icon);
+        mActionBar.setLogo(R.drawable.app_icon_actionbar);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.imageViewFindPeople:
-                Intent intent = new Intent(LoginActivity.this, MapsFinderActivity.class);
+                intent = new Intent(LoginActivity.this, MapsFinderActivity.class);
                 startActivity(intent);
                 break;
 
             case R.id.imageViewCreateHotspot:
-
+                intent = new Intent(LoginActivity.this, MainScreen2.class);
+                startActivity(intent);
                 break;
         }
     }
