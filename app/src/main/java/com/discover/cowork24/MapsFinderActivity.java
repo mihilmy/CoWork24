@@ -30,7 +30,9 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
@@ -344,7 +346,9 @@ public class MapsFinderActivity extends AppCompatActivity implements
         mMap.setMyLocationEnabled(true);
         mMap.addMarker(new MarkerOptions().position(position).title("Your location"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(position));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position,15));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 15));
+
+        setMarker();
     }
 
     @Override
@@ -354,6 +358,14 @@ public class MapsFinderActivity extends AppCompatActivity implements
                 .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
                 .setInterval(10 * 1000)        // 10 seconds, in milliseconds
                 .setFastestInterval(1 * 1000); // 1 second, in milliseconds
+    }
+
+    public void setMarker(){
+        LatLng NYU = new LatLng(40.736865, -73.991262);
+        Marker cafe = mMap.addMarker(new MarkerOptions()
+                .position(NYU).title("Union Square Cafe").snippet("Population: 4,137,400"));
+        cafe.setInfoWindowAnchor(0, 0);
+        cafe.setVisible(true);
     }
 
 }
